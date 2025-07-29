@@ -215,6 +215,21 @@
         white-space: pre-wrap;
         border-radius: 6px;
       }
+      details {
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #2196f3;
+  border-radius: 5px;
+}
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+details p, details ul {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
     </style>
   </head>
   <body>
@@ -520,20 +535,48 @@
 
         <section id="faq" class="section">
           <h2>4. FAQ (Pertanyaan Umum)</h2>
-          <ul>
-            <li>
-              <strong>Gambar thumbnail tidak muncul?</strong><br />
-              Pastikan ada <code>&lt;img&gt;</code> di awal isi postingan.
-            </li>
-            <li>
-              <strong>Komentar tidak muncul?</strong><br />
-              Cek setelan komentar dan pastikan blog tidak privat.
-            </li>
-            <li>
-              <strong>Bagaimana ganti warna?</strong><br />
-              Edit CSS di bagian <code>:root</code> atau gunakan Desainer Tema.
-            </li>
-          </ul>
+            <details>
+    <summary><strong>Apakah saya harus mengedit HTML/CSS untuk mengubah tampilan?</strong></summary>
+    <p>Tidak. Tema ini dirancang agar semua pengaturan penting bisa dilakukan langsung dari <strong>dashboard Blogger</strong>, tanpa perlu menyentuh kode HTML atau CSS manual.</p>
+  </details>
+
+  <details>
+    <summary><strong>Bagaimana cara mengubah warna tema?</strong></summary>
+    <p>
+      Anda bisa mengubah warna utama, warna header, tombol, dan lainnya dari menu <strong>Tema → Sesuaikan → Tingkat Lanjut</strong>.  
+      Cukup pilih warna dari color picker, lalu simpan.
+    </p>
+  </details>
+
+  <details>
+    <summary><strong>Bagaimana cara mengatur tampilan Beranda (Homepage)?</strong></summary>
+    <p>
+      Silakan buka menu <strong>Tata Letak</strong>, lalu atur bagian-bagian seperti:
+      <ul>
+        <li>Header</li>
+        <li>Slideshow atau Hero Section</li>
+        <li>Kata Sambutan</li>
+        <li>Menampilkan Video Dokumentasi</li>
+        <li>Dan lain-lain</li>
+      </ul>
+      Semua ini bisa diatur cukup dari dashboard tata letak → klik ikon edit.
+    </p>
+  </details>
+
+  <details>
+    <summary><strong>Apakah bisa mengganti teks judul, deskripsi, dan menu?</strong></summary>
+    <p>Ya. Semua teks utama dapat diedit dari:
+      <ul>
+        <li><strong>Judul & Deskripsi Blog</strong>: melalui menu <strong>Setelan</strong></li>
+        <li><strong>Menu Navigasi</strong>: melalui bagian <strong>Tata Letak → Menu Navigasi</strong></li>
+      </ul>
+    </p>
+  </details>
+
+  <details>
+    <summary><strong>Apakah saya bisa menambahkan halaman statis seperti “Tentang”, “Kontak”, atau “PPDB”?</strong></summary>
+    <p>Tentu. Gunakan menu <strong>Halaman</strong> di Blogger untuk membuat halaman statis. Setelah dibuat, Anda bisa menambahkannya ke menu melalui Tata Letak atau secara manual melalui tautan.</p>
+  </details>
         </section>
 
         <section id="changelog" class="section">
